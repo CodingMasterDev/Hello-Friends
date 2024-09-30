@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Welcome from './components/Welcome/Welcome'
 
 function App() {
   const friends = ["Charli Shaffer",
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      {friends.map(friend=><div>Hello {friend}</div>)}
+      {friends.map(friend=><Welcome name={friend}/>)}
     </>
   )
 }
