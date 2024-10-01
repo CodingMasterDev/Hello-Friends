@@ -1,6 +1,7 @@
 .WelcomeGreet {
     color: green;
     margin: 20px;
+
     &:hover {
         color: purple;
     }
